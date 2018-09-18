@@ -1,5 +1,4 @@
 'use strict';
-console.log("TEST");
 var deselectCurrent = require('toggle-selection');
 
 var defaultMessage = 'Copy to clipboard: #{key}, Enter';
@@ -49,7 +48,6 @@ function copy(text, options) {
     debug && console.error('unable to copy using execCommand: ', err);
     debug && console.warn('trying IE specific stuff');
     try {
-      console.log("SETTING");
       window.clipboardData.setData('text/plain', text);
       success = true;
     } catch (err) {
