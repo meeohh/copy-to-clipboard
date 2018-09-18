@@ -1,5 +1,5 @@
 'use strict';
-
+console.log("TEST");
 var deselectCurrent = require('toggle-selection');
 
 var defaultMessage = 'Copy to clipboard: #{key}, Enter';
